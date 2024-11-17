@@ -1,4 +1,6 @@
-# Table of Contents
+# Face Expression Detection
+
+## Table of Contents
 
 1. [Project Overview](#project-overview)
 2. [Dataset](#dataset)
@@ -7,9 +9,13 @@
 5. [Model Workflow](#model-workflow)
 6. [Conclusion](#conclusion)
 
+---
+
 ## Project Overview
 
 This project focuses on emotion classification from facial expressions using deep convolutional neural networks (CNNs). The model was trained on the FER-2013 dataset, a widely recognized benchmark introduced at the International Conference on Machine Learning (ICML). The dataset comprises 35,887 grayscale images, each with a resolution of 48x48 pixels, categorized into seven distinct emotions: anger, disgust, fear, happiness, neutrality, sadness, and surprise. This project showcases the ability of CNNs to learn complex features from raw image data for classification tasks.
+
+---
 
 ## Dataset
 
@@ -23,6 +29,7 @@ The dataset is structured into two main directories:
 
 Each directory has subfolders for each of the 7 facial expressions: **Angry**, **Disgust**, **Fear**, **Happy**, **Sad**, **Surprise**, and **Neutral**.
 
+---
 
 ## Installation
 
@@ -43,6 +50,9 @@ You can install the required dependencies using `pip`:
 ```bash
 pip install tensorflow numpy opencv-python matplotlib
 ```
+
+---
+
 ## Model Explanation
 
 The model is built using Convolutional Neural Networks (CNN), which are highly effective for image classification tasks. The architecture consists of several layers:
@@ -55,6 +65,8 @@ The model is built using Convolutional Neural Networks (CNN), which are highly e
 
 The model is trained on the FER2013 dataset using image augmentation techniques to improve generalization. The model is evaluated based on its accuracy and loss over the training and testing datasets.
 
+---
+
 ## Model Workflow
 
 - **Image Preprocessing**: Images are resized and normalized to fit the input size of the network (e.g., 48x48 pixels).
@@ -62,6 +74,8 @@ The model is trained on the FER2013 dataset using image augmentation techniques 
 - **Evaluation**: After training, the model is evaluated using a test set to estimate its real-world performance.
 - Here is the plot of the accuracy and loss of each validation and training data.
 ![](https://github.com/Sangeeth1242/face_expression_detection/blob/main/plot.png)
+
+---
 
 ## Conclusion
 
